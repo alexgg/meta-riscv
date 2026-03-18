@@ -8,6 +8,8 @@ LICENSE = "CLOSED"
 SRC_URI = "git://github.com/revyos/th1520-boot-firmware.git;branch=master;protocol=https"
 SRCREV = "725756411ecc20f2c2dbc5ea6b8e5aacc6f83aad"
 
+S = "${WORKDIR}/git"
+
 do_install() {
     install -m 644 ${S}/addons/boot/light_aon_fpga.bin ${DEPLOY_DIR_IMAGE}/
 }

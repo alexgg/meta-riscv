@@ -15,7 +15,7 @@ SRC_URI = "git://github.com/revyos/thead-opensbi.git;branch=th1520;protocol=http
            file://0001-c23-compatibility.patch \
            file://0001-add-missing-LDFLAGS-to-Makefile.patch"
 
-#S = "${WORKDIR}/git"
+S = "${WORKDIR}/git"
 
 EXTRA_OEMAKE += "PLATFORM=${RISCV_SBI_PLAT} I=${D} FW_PIC=n CLANG_TARGET= "
 # If RISCV_SBI_PAYLOAD is set then include it as a payload
